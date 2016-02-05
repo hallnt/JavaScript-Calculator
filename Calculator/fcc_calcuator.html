@@ -6,12 +6,47 @@
 <!-- Description: Calculator developed using HTML5, CSS, Bootstrap and JavaScript for functionality -->
 <!-- Version 1 -->
 <head>
-    <title>Calcuator</title>
-    <!-- CSS/Bootstrap -->
-
-    
+    <title>Calcuator</title>    
 </head>
 <body>
+    <!-- Calculator container -->
+    <div class="calculator">
+        <h4><b>FreeCodeCamp Calculator</b></h4><!-- bold heading -->
 
+        <!-- add calculator display field -->
+        <input type="text" id="display" readonly><!-- readonly text field -->
+
+        <!-- add calculator buttons -->
+        <div><!-- group buttons using div -->
+            <input type="button" class="keys" id="ac" value="AC" onclick="function();">
+            <input type="button" class="keys" id="ce" value="CE" onclick="function();">
+            <input type="button" class="keys" id="percent" value="%" onclick="function();">
+            <input type="button" class="keys" id="divide" value="/" onclick="function();">
+        </div>
+        <div>
+            <input type="button" class="keys" id="seven" value="7" onclick="function();">
+            <input type="button" class="keys" id="eight" value="8" onclick="function();">
+            <input type="button" class="keys" id="nine" value="9" onclick="function();">
+            <input type="button" class="keys" id="multiply" value="*" onclick="function();">
+        </div>
+        <div>
+            <input type="button" class="keys" id="four" value="4" onclick="function();">
+            <input type="button" class="keys" id="five" value="5" onclick="function();">
+            <input type="button" class="keys" id="six" value="6" onclick="function();">
+            <input type="button" class="keys" id="minus" value="-" onclick="function();">
+        </div>
+        <div>
+            <input type="button" class="keys" id="one" value="1" onclick="function();">
+            <input type="button" class="keys" id="two" value="2" onclick="function();">
+            <input type="button" class="keys" id="three" value="3" onclick="function();">
+            <input type="button" class="keys" id="plus" value="+" onclick="function();">
+        </div>
+        <div>
+            <input type="button" class="keys" id="decimal" value="." onclick="function();">
+            <input type="button" class="keys" id="zero" value="0" onclick="function();">
+            <input type="button" class="keys" id="ans" value="Ans" onclick="function();">
+            <input type="button" class="keys" id="eval" value="=" onclick="function();">
+        </div>
+    </div><!-- /.calculator -->
 </body>
 </html>
