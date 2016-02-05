@@ -1,0 +1,47 @@
+﻿/* style page body */
+body {
+  background-color: #67c896;  /* page background color */  
+}
+
+/* style h4 heading */
+h4 {
+  font-style: oblique;  /* make font style italic or oblique */
+  color: white;  /* heading text color */
+}
+
+/* style calculator container */
+.calculator {
+  background-color: #cc36e9;  /* background color of calculator */
+  border: 3px solid #a4c;  /* calculator border size, style and color */
+  border-radius: 5px;  /* slight rounded edges */
+  width: 270px;      /* width of calculator */
+  height: 320px;    /* height of calculator */
+  padding: 5px;    /* set padding all around calculator text */
+  margin: 10px auto;  /* set top and bottom margin of calculator 10px, and center on page */
+  text-align: center;  /* center align calculator text */
+  font-weight: bold;  /* make text bold */
+}
+
+/* style calculator display */
+#display {
+  width: 17em;  /* width of display */
+  height: 2em;  /* height of display */
+  margin-bottom: 8px;  /* bottom margin of display */
+}
+
+/* style calculator keys */
+.keys {
+  background-color: white;  /* background color of keys or buttons */
+  color: #801ce5;      /* button text color */
+  width: 4em;      /* width of buttons */
+  height: 3em;    /* height of buttons */
+  margin-bottom: 3px;  /* bottom margin of buttons */
+}
+
+/* style footer */
+.footer {
+    background-color: white;  /* background color of footer text */
+    text-align: center;        /* center align footer */
+    padding: 2px;             /* set padding around text */
+    margin-top: 30px;        /* set top margin */
+}

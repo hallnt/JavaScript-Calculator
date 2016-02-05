@@ -4,20 +4,25 @@
 <!-- App: Calculator -->
 <!-- Date: February 5, 2016 -->
 <!-- Description: Calculator developed using HTML5, CSS, Bootstrap and JavaScript for functionality -->
-<!-- Version 1 -->
+<!-- Version 2 -->
 <head>
-    <title>Calcuator</title>    
+    <title>Calcuator</title><!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="CalcStyleSheet.css" />
 </head>
 <body>
     <!-- Calculator container -->
     <div class="calculator">
         <h4><b>FreeCodeCamp Calculator</b></h4><!-- bold heading -->
-
         <!-- add calculator display field -->
         <input type="text" id="display" readonly><!-- readonly text field -->
-
         <!-- add calculator buttons -->
-        <div><!-- group buttons using div -->
+        <div>
+            <!-- group buttons using div -->
             <input type="button" class="keys" id="ac" value="AC" onclick="function();">
             <input type="button" class="keys" id="ce" value="CE" onclick="function();">
             <input type="button" class="keys" id="percent" value="%" onclick="function();">
@@ -48,5 +53,17 @@
             <input type="button" class="keys" id="eval" value="=" onclick="function();">
         </div>
     </div><!-- /.calculator -->
+
+    <div class="footer">
+        Copyright © Teleisha Hall 2016. 
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
