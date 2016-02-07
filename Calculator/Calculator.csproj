@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CalcStyleSheet.css" />
+    <Content Include="Calc_Funct.js" />
     <Content Include="fcc_calcuator.html" />
     <Content Include="Web.config" />
   </ItemGroup>

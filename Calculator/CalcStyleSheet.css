@@ -10,7 +10,7 @@ h4 {
 }
 
 /* style calculator container */
-.calculator {
+#calculator {
   background-color: #cc36e9;  /* background color of calculator */
   border: 3px solid #a4c;  /* calculator border size, style and color */
   border-radius: 5px;  /* slight rounded edges */
@@ -24,13 +24,16 @@ h4 {
 
 /* style calculator display */
 #display {
+  background-color: #ad8;  /* background color of display */
   width: 17em;  /* width of display */
   height: 2em;  /* height of display */
   margin-bottom: 8px;  /* bottom margin of display */
+  text-align: right;  /* align display text right */
+  font-weight: normal; /* remove bold from text */
 }
 
-/* style calculator keys */
-.keys {
+/* style calculator buttons */
+input[type="button"] {
   background-color: white;  /* background color of keys or buttons */
   color: #801ce5;      /* button text color */
   width: 4em;      /* width of buttons */
@@ -40,8 +43,8 @@ h4 {
 
 /* style footer */
 .footer {
-    background-color: white;  /* background color of footer text */
-    text-align: center;        /* center align footer */
-    padding: 2px;             /* set padding around text */
-    margin-top: 30px;        /* set top margin */
+  background-color: white;  /* background color of footer text */
+  text-align: center;        /* center align footer */
+  padding: 2px;             /* set padding around text */
+  margin-top: 30px;        /* set top margin */
 }
