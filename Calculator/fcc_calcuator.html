@@ -15,38 +15,37 @@
     <link rel="stylesheet" type="text/css" href="CalcStyleSheet.css" />
 </head>
 <body>
-    <!-- Calculator form -->
-    <form id="calculator">
+    <!-- Calculator container -->
+    <div id="calculator">
         <h4><b>FreeCodeCamp Calculator</b></h4><!-- bold heading -->
-        
-        <!-- add calculator display field -->
+        <!-- calculator display -->
         <input type="text" id="display" readonly><!-- readonly text field -->
-        
-        <!-- add calculator buttons -->
-        <input type="button" id="ac" value="AC" onclick="calculator.display.value = ''">
-        <input type="button" id="ce" value="CE" onclick="calculator.display.value = ''">
-        <input type="button" id="percent" value="%" onclick="calculator.display.value += '%'">
-        <input type="button" id="divide" value="/" onclick="calculator.display.value += '/">
-        <input type="button" id="seven" value="7" onclick="calculator.display.value += '7'">
-        <input type="button" id="eight" value="8" onclick="calculator.display.value += '8'">
-        <input type="button" id="nine" value="9" onclick="calculator.display.value += '9'">
-        <input type="button" id="multiply" value="*" onclick="calculator.display.value += '*'">
-        <input type="button" id="four" value="4" onclick="calculator.display.value += '4'">
-        <input type="button" id="five" value="5" onclick="calculator.display.value += '5'">
-        <input type="button" id="six" value="6" onclick="calculator.display.value += '6'">
-        <input type="button" id="minus" value="-" onclick="calculator.display.value += '-'">
-        <input type="button" id="one" value="1" onclick="calculator.display.value += '1'">
-        <input type="button" id="two" value="2" onclick="calculator.display.value += '2'">
-        <input type="button" id="three" value="3" onclick="calculator.display.value += '3'">
-        <input type="button" id="plus" value="+" onclick="calculator.display.value += '+'">
-        <input type="button" id="decimal" value="." onclick="calculator.display.value += '.'">
-        <input type="button" id="zero" value="0" onclick="calculator.display.value += '0'">
-        <input type="button" id="ans" value="Ans" onclick="calculator.display.value">
-        <input type="button" id="eval" value="=" onclick="calculator.display.value += '='">
-    </form><!-- /.form -->
+        <!-- calculator buttons -->
+        <input type="button" id="ac" value="AC" onclick="allClear('');">
+        <input type="button" id="ce" value="CE" onclick="clear();">
+        <input type="button" id="percent" value="%" onclick="getVal('%');">
+        <input type="button" id="divide" value="/" onclick="getVal('/');">
+        <input type="button" id="seven" value="7" onclick="getVal('7')">
+        <input type="button" id="eight" value="8" onclick="getVal('8');">
+        <input type="button" id="nine" value="9" onclick="getVal('9');">
+        <input type="button" id="multiply" value="*" onclick="getVal('*');">
+        <input type="button" id="four" value="4" onclick="getVal('4');">
+        <input type="button" id="five" value="5" onclick="getVal('5');">
+        <input type="button" id="six" value="6" onclick="getVal('6');">
+        <input type="button" id="minus" value="-" onclick="getVal('-');">
+        <input type="button" id="one" value="1" onclick="getVal('1');">
+        <input type="button" id="two" value="2" onclick="getVal('2');">
+        <input type="button" id="three" value="3" onclick="getVal('3');">
+        <input type="button" id="plus" value="+" onclick="getVal('+');">
+        <input type="button" id="decimal" value="." onclick="getVal('.');">
+        <input type="button" id="zero" value="0" onclick="getVal('0');">
+        <input type="button" id="ans" value="Ans" onclick="answer();">
+        <input type="button" id="eval" value="=" onclick="calculate();">
+    </div><!-- /#container -->
 
+    <!-- Footer section -->
     <div class="footer">
-        Copyright © Teleisha Hall 2016. 
+        Copyright © Teleisha Hall 2016.
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
