@@ -5,7 +5,8 @@ body {
 
 /* style h4 heading */
 h4 {
-  font-style: oblique;  /* make font style italic or oblique */
+  font-family: Monospace;  /* font type */
+  font-size: 20px;  /* heading size */
   color: white;  /* heading text color */
 }
 
@@ -35,9 +36,11 @@ h4 {
 /* style calculator buttons */
 input[type="button"] {
   background-color: white;  /* background color of keys or buttons */
+  border: 2px solid #a67;  /* border around buttons */
+  border-radius: 4px;       /* rounded border edges */
   color: #801ce5;      /* button text color */
-  width: 4em;      /* width of buttons */
-  height: 3em;    /* height of buttons */
+  width: 4em;           /* width of buttons */
+  height: 3em;          /* height of buttons */
   margin-bottom: 3px;  /* bottom margin of buttons */
 }
 
